@@ -8,10 +8,12 @@ There are two other modules that fulfill the task
 
 ## Python file Description
 
-| S. No. | Content | Link |
-|---|---|---|
-| 01 | 01.py | [Link](01.py/) |
-| 02 | 02.py | [Link](02.py/) |
+
+| S. No. | Content | Description | Link |
+|---|---|---|---|
+| 01 | 01.py    | Basic                                                       | [Link](01.py/)    |
+| 02 | 02.py    | Introducing Positional Arguments                            | [Link](02.py/)    |
+| 03 | 02_1.py  | Introducing Positional Arguments whith **`help`**           | [Link](02_1.py/)  |
 
 
 ## Basic
@@ -78,3 +80,15 @@ What is happening here:
 - The **`parse_args()`** method actually returns some data from the options specified, in this case, **`echo`**.
 - The variable is some form of "magic" that **`argparse`** performs for free. You will also notice that its name matches the string argument given to the method, **`echo`**.
 
+```console
+ubuntu@ip:~$ python 02_1.py --help
+usage: 02_1.py [-h] echo
+
+positional arguments:
+  echo        Echo the string you use here.
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+ubuntu@ip:~$ 
+```
