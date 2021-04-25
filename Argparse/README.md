@@ -11,9 +11,11 @@ There are two other modules that fulfill the task
 
 | S. No. | Content | Description | Link |
 |---|---|---|---|
-| 01 | 01.py    | Basic                                                       | [Link](01.py/)    |
-| 02 | 02.py    | Introducing Positional Arguments                            | [Link](02.py/)    |
-| 03 | 02_1.py  | Introducing Positional Arguments whith **`help`**           | [Link](02_1.py/)  |
+| 01 | 01.py    | Basic                                                                           | [Link](01.py/)    |
+| 02 | 02.py    | Introducing Positional Arguments                                                | [Link](02.py/)    |
+| 03 | 02_1.py  | Introducing Positional Arguments whith **`help`**                               | [Link](02_1.py/)  |
+| 04 | 02_2.py  | Introducing Positional Arguments whith help and other**`data type`**            | [Link](02_2.py/)  |
+
 
 
 ## Basic
