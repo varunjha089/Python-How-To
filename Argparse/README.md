@@ -92,3 +92,45 @@ optional arguments:
 
 ubuntu@ip:~$ 
 ```
+
+Little more functionality:
+
+```py
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("square", help="Display the square of a given number.")
+args = parser.parse_args()
+print(args.square**2)
+```
+
+Result of above code
+
+```console
+ubuntu@ip:~$ python 02_2.py 5
+Traceback (most recent call last):
+  File "02_2.py", line 7, in <module>
+    print(args.square**2)
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+
+ubuntu@ip:~$ 
+```
+
+This didn't go so well because the **`argparse`** treats the options we give it as string, unless we tell it otherwise. So, the correct code will be:
+
+```py
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("square", help="Display the square of a given number.", type= int)
+args = parser.parse_args()
+print(args.square**2)
+```
+
+```console
+ubuntu@ip:~$ ppython 02_2.py 5
+25
+
+ubuntu@ip:~$
+```
+
